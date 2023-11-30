@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Admin Login</title>
+  <link rel="icon" type="image/png" href="../Logo/logo.png">
+  <link rel="stylesheet" href="./assets/styles/styles.css" />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" />
+</head>
+
+<body>
+  <div class="login-container">
+    <div class="login-wrapper">
+      <div class="profile">
+        <img src="../BG/bg.png" alt="" width="90" />
+      </div>
+      
+      <!-- Added form element with action attribute -->
+      <form action="login.php" method="post">
+        <div class="form-wrapper">
+          <p>Nickname</p>
+          <input type="text" name="Nickname" placeholder="Type your Nickname" required />
+        </div> 
+        <div class="form-wrapper">
+          <p>Password</p>
+          <input type="password" name="Password" placeholder="Type your Password" required />
+        </div>
+        <div class="login-btn">
+          <button type="submit">Login</button>
+        </div>
+      </form>
+      
+      <div class="signup">
+        <p>Don't have an account? <a href="signup.php">Sign Up</a></p>
+      </div>
+    </div>
+  </div>
+</body>
+<style>
+  .signup {
+    margin-top: auto;
+    height: 100px;
+    color: #d885dc;
+    cursor: pointer;
+    font-weight: 400;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+  }
+</style>
+</html>
