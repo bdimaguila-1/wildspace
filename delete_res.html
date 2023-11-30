@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Delete Reservation</title>
+<link rel="icon" type="image/png" href="Logo/logo.png">
+
+<style>
+body {
+    background-image: url("BG/bg.png"); 
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    text-align: center;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: black; 
+    margin-top: 100px;
+}
+
+form {
+    background-color: rgba(255, 255, 255, 0.7); /* Add a semi-transparent white background to the form */
+    display: inline-block;
+    padding: 20px;
+    border-radius: 10px;
+    max-width: 400px; 
+}
+
+label, input {
+    display: block;
+    margin: 10px 0;
+}
+input[type="submit"] {
+            margin: 0 auto; 
+        }
+</style>
+
+</head>
+<body>
+    <h1>Delete Reservation</h1>
+    <form method="post" action="delete.php">
+		
+		<label for="DeleteID">ID:</label>
+        <input type="number" name="DeleteID" id="DeleteID" required>
+		
+        <label for="DeleteName">Name:</label>
+        <input type="text" name="DeleteName" id="DeleteName" required>
+
+        <label for="DeleteEmail">Email:</label>
+        <input type="email" name="DeleteEmail" id="DeleteEmail" required>
+
+        <input type="submit" value="Delete Reservation">
+    </form>
+</body>
+</html>

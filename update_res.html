@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Update Reservation</title>
+<link rel="icon" type="image/png" href="Logo/logo.png">
+<style>
+    body {
+        background-image: url("BG/bg.png");
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-attachment: fixed;
+        background-position: center;
+        text-align: center;
+        margin: 0;
+        padding: 0;
+        display: flex; /* Center the content vertically */
+        justify-content: center; /* Center the content horizontally */
+        align-items: center; /* Center the content vertically (for older browsers) */
+        height: 100vh;
+    }
+
+    h2 {
+        color: black;
+    }
+
+    .form-container {
+        background-color: rgba(255, 255, 255, 0.7);
+        border-radius: 10px;
+        padding: 20px;
+        width: 300px; /* Adjust the width of the form container as needed */
+        margin-top: 50px; /* Move the form down by changing the margin-top */
+    }
+
+    label, input, select {
+        display: block;
+        width: 100%; /* Make the inputs fill the entire width of the form */
+        margin-bottom: 10px;
+        box-sizing: border-box; /* Include padding and border in the element's total width and height */
+    }
+
+    input[type="submit"] {
+        width: 100%; /* Make the submit button fill the entire width of the form */
+    }
+</style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Update Reservation</h2>
+    <form action="update_res.php" method="POST">
+        <label for="ID">Reservation ID:</label>
+        <input type="text" name="ID" required><br><br>
+
+        <label for="name">Name:</label>
+        <input type="text" name="Name"><br><br>
+
+        <label for="email">Email:</label>
+        <input type="email" name="Email"><br><br>
+
+        <label for="date">New Date:</label>
+        <input type="date" name="Date"><br><br>
+
+        <label for="design">New Design:</label>
+        <select name="Design">
+            <option value="Hermit - 399">Hermit - 399</option>
+            <option value="Mystic - 649">Mystic - 649</option>
+            <option value="Triune - 899">Triune - 899</option>
+            <option value="Cosmic - 1399">Cosmic - 1399</option>
+            <option value="Euphoric - 1599">Euphoric - 1599</option>
+            <option value="Magic - 3499">Magic - 3499</option>
+        </select><br><br>
+
+        <input type="submit" value="Update Reservation"><br>
+        <a href="index.html">Return to Wildspace</a>
+    </form>
+</div>
+</body>
+</html>
